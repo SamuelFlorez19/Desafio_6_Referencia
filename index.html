@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afiliación</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1> Vení al Gym 💪</h1>
+
+    <!--? DATOS PERSONALES -->
+
+    <div class="datos_personales">
+      <fieldset>
+        <legend>🙋 Datos Personales 👀</legend>
+        <div class="formulario">
+
+          <div class="campo">
+            <label for="nombre">Nombre: *</label>
+            <input type="text" id="nombre" name="nombre">
+          </div>
+        
+          <div class="campo">
+            <label for="apellido">Apellido: *</label>
+            <input type="text" id="apellido" name="apellido">
+          </div>
+        
+          <div class="campo"> 
+            <label for="documento">Documento: *</label>
+            <input type="number" id="documento" name="documento">
+          </div>
+        
+          <div class="campo">
+            <label for="nacionalidad">Nacionalidad: *</label>
+            <select id="nacionalidad" name="nacionalidad" required>
+              <option value="" disabled selected>--Seleccionar--</option>
+              <option value="argentina">Argentina</option>
+              <option value="colombia">Colombia</option>
+              <option value="uruguay">Uruguay</option>
+              <option value="venezuela">Venezuela</option>
+              <option value="ecuador">Ecuador</option>
+            </select>
+          </div>
+        
+          <div class="campo">
+            <label for="sobreusted">Cuentanos un poco de vos:</label>
+            <textarea id="sobreusted" name="sobreusted" rows="4"  cols="50"></textarea>
+          </div>
+          
+          <div class="campo-s">
+            <p class="sexo-p">Sexo: *</p>
+            <div class="sexo_container">
+              <input type="radio" id="femenino" name="sexo"   value="femenino">
+              <label for="femenino">Femenino</label>
+              <input type="radio" id="masculino" name="sexo"  value="masculino">
+              <label for="masculino">Masculino</label>
+              <input type="radio" id="otro" name="sexo" value="otro">
+              <label for="otro">Otro</label>
+            </div>
+        </div>
+      </div>
+      
+      </fieldset>
+    </div>
+
+    
+      <p class="puntos">. . . . . . . . . . .</p>
+    
+<!-- ? DATOS DE CONTACTO -->
+
+<div class="datos_contacto">
+<fieldset>
+
+  <legend>📱 Datos de contacto 📩</legend>
+  <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono"  placeholder="Código de Area y Número" required>
+        </div>
+  
+        <div class="campo">
+          <label for="email">Dirección de correo electrónico: *</label>
+          <input type="email" id="email" name="email" placeholder="Ej: mail@gmail.com" required>
+        </div>
+      </fieldset>
+    </div>
+
+    <p class="puntos">. . . . . . . . . . .</p>
+
+    <!-- ?CTIVIDADES -->
+
+    <div class="actividades">
+      <fieldset>
+        <legend>🚴 Actividades 🤸‍♂️</legend>
+        <p>Por favor, indicá cuáles actividades te interesan:</p>
+  
+        <div class="palermo">
+          <label for="palermo-basquet">Sede Palermo:</label>
+          <div class="palermo_container">
+            <input type="checkbox" id="palermo-basquet" name="actividades[]" value="basquet"> Basquet
+            <input type="checkbox" id="palermo-boxeo" name="actividades[]" value="boxeo"> Boxeo
+            <input type="checkbox" id="palermo-futbol" name="actividades[]" value="futbol"> Futbol
+            <input type="checkbox" id="palermo-tenis" name="actividades[]" value="tenis"> Tenis
+          </div>
+        </div>
+  
+        <div class="rosario">
+          <label for="rosario-basquet">Sede Rosario:</label>
+          <div class="rosario_container">
+            <input type="checkbox" id="rosario-basquet" name="actividades[]" value="basquet"> Basquet
+            <input type="checkbox" id="rosario-futbol" name="actividades[]" value="futbol"> Futbol
+            <input type="checkbox" id="rosario-rugby" name="actividades[]" value="rugby"> Rugby
+            <input type="checkbox" id="rosario-voley" name="actividades[]" value="voley"> Voley
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    
+      <div class="condiciones">
+        <input type="checkbox" id="condiciones" name="condiciones" required>
+        <label for="condiciones">Acepto las condiciones *</label>
+      </div>
+  
+      <div class="novedades">
+        <input type="checkbox" id="novedades" name="novedades">
+        <label for="novedades">Quiero recibir novedades</label>
+
+        <p>*: campo oblogatorio</p>
+      </div>
+      
+      <div class="botones">
+
+        <div class="boton-1">
+          <button>Iniciar afiliación</button>
+        </div>
+        <div class="boton-2">
+          <button>Restablecer</button>
+        </div>
+        
+      </div>
+    </div>
+    
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
